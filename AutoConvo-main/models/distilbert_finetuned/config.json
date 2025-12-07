@@ -1,0 +1,40 @@
+{
+    "_name_or_path": "distilbert-base-uncased",
+    "activation": "gelu",
+    "architectures": ["DistilBertForSequenceClassification"],
+    "attention_dropout": 0.1,
+    "dim": 768,
+    "dropout": 0.1,
+    "finetuning_task": "intent_detection",
+    "hidden_dim": 3072,
+    "initializer_range": 0.02,
+    "max_position_embeddings": 512,
+    "model_type": "distilbert",
+    "num_attention_heads": 12,
+    "num_hidden_layers": 6,
+    "output_hidden_states": false,
+    "output_attentions": false,
+    "transformers_version": "4.39.3",
+    "num_labels": 7,
+    "id2label": {
+      "0": "play_music",
+      "1": "navigate_home",
+      "2": "increase_volume",
+      "3": "call_contact",
+      "4": "open_maps",
+      "5": "turn_off_ac",
+      "6": "nearest_gas_station"
+    },
+    "label2id": {
+      "play_music": 0,
+      "navigate_home": 1,
+      "increase_volume": 2,
+      "call_contact": 3,
+      "open_maps": 4,
+      "turn_off_ac": 5,
+      "nearest_gas_station": 6
+    },
+    "torch_dtype": "float32",
+    "AutoConvo_export_time": "2025-10-15T14:52:00Z"
+  }
+  

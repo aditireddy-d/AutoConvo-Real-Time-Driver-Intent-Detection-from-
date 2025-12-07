@@ -1,0 +1,9 @@
+transformers
+torch
+datasets
+pydub
+whisper
+sounddevice
+scipy
+tensorflow-datasets
+tensorflow-io

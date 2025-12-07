@@ -1,0 +1,12 @@
+model:
+  path: models/distilbert_finetuned
+  onnx_path: models/onnx/intent_model.onnx
+  trt_path: models/tensorrt/intent_model.trt
+
+asr:
+  model: whisper
+  language: en
+
+context:
+  enable: true
+  timeout: 60  # seconds

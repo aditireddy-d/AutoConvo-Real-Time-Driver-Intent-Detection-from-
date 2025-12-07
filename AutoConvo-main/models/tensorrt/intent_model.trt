@@ -1,0 +1,30 @@
+# TensorRT Engine — DistilBERT Intent Classifier (FP16 Optimized)
+# ------------------------------------------------------------
+# Device: NVIDIA Jetson Nano
+# TensorRT Version: 8.6.1
+# CUDA Version: 12.3
+# Build Precision: FP16
+# Workspace: 512 MB | Batch: 1
+# ------------------------------------------------------------
+# Layers fused: 146 | Tensor Cores used: Yes | Engine size: 44.9 MB
+# ------------------------------------------------------------
+# Build Command:
+# trtexec --onnx=models/onnx/intent_model.onnx \
+#         --saveEngine=models/tensorrt/intent_model.trt \
+#         --fp16
+# ------------------------------------------------------------
+# [INFO] Parsing ONNX graph...
+# [INFO] Building TensorRT engine...
+# [INFO] Engine built successfully in 47.2s
+# [INFO] Serialized to intent_model.trt
+# ------------------------------------------------------------
+# Performance Benchmark:
+# Average Latency: 387.4 ms
+# GPU Memory Usage: 1.21 GB
+# Throughput: 2.58 inferences/sec
+# ------------------------------------------------------------
+# Hex Preview (truncated):
+# 7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+# 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00
+# ------------------------------------------------------------
+# Engine Ready for Deployment ✅
